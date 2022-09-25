@@ -29,7 +29,7 @@ Commercial support is available at
 $(document).ready(function(){
   $("button").click(function(){
     $.get("/webdemo/proposals", function(data, status){
-      let str = data.replaceAll('},{','},\n{') );
+      let str = data.replaceAll('},{','},\n{');
       $("#out").text(str);
     });
   });
