@@ -2,8 +2,8 @@ server {
 
  listen $PORT default_server;
  
-	root /usr/share/nginx/html;
-	index index.html index.htm;
+	#root /usr/share/nginx/html;
+	#index index.html index.htm;
 
   location /webdemo/ {
     proxy_pass  http://129.151.254.185;
